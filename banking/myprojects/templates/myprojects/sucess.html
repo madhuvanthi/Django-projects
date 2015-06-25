@@ -1,0 +1,21 @@
+<html>
+	<!--<title>Sucess</title>-->
+
+	<body>
+		<strong>{{ text }}</strong><br>
+		<a href = "{% url 'main_page' %}">Back </a>
+    </body>
+</html> 
+
+<!--<html>
+	<title> Register </title>
+	<body>
+			<strong>{{text}}</strong>
+			<form action ="{%url  'main_page'%}" method="post">
+				{% csrf_token %}
+				{{form.as_p}}
+				<input type="submit"  value="register">
+			</form>
+			<a href="{%url 'main_page'%}"> Back </a>
+	</body>
+</html> -->

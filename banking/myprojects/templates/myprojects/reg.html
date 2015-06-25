@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<form action="welcome" method="POST"> -->
+<form action="{% url 'welcome' %}" method="POST">
+	{%csrf_token%}
+
+<!-- Cust id:<br> -->
+<!-- <input type="text" name="cust_id" value=""> -->
+<br>
+First name:<br>
+<input type="text" name="firstname" >
+<br>
+Last name:<br>
+<input type="text" name="lastname" >
+<br>
+User name:<br>
+<input type="text" name="username" >
+<br>
+Password:<br>
+<input type="password" name="password" >
+<br>
+Place:<br>
+<input type="text" name="place" >
+<br>
+Contact_no:<br>
+<input type="text" name="contact_no" >
+<br>
+
+<input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>

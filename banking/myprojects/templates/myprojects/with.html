@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<form action="welcome" method="POST"> -->
+<form action="{% url '' %}" method="POST">
+	{%csrf_token%}
+
+Acc_no:<br>
+<input type="text" name="acc_no" value="">
+<br>
+Money:<br>
+<input type="text" name="money" value="">
+<br>
+
+<input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>
