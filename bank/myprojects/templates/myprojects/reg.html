@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<!--<form action="welcome" method="POST"> -->
+	<form action="{% url 'register' %}" method="POST">
+		{%csrf_token%}
+
+		<!-- Cust id:<br> -->
+		<!-- <input type="text" name="cust_id" value=""> -->
+		<br>
+		First name:<br>
+		<input type="text" name="firstName" >
+		<br>
+		Last name:<br>
+		<input type="text" name="lastName" >
+		<br>
+		User name:<br>
+		<input type="text" name="userName" >
+		<br>
+		Password:<br>
+		<input type="password" name="password" >
+		<br>
+		
+		Contact_no:<br>
+		<input type="text" name="contactNo" >
+		<br>
+		balance:<br>
+		<input type="text" name="balance" >
+		<br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="{% url 'submit' %}"   method="POST">
+	{%csrf_token%}
+	Your balance amount is {{balanceAmt}}
+<label>transaction type  </label>
+
+<select id="transaction">
+	<option value="1">deposit</option>
+	<option value="2">withdraw</option> 
+</select>
+<input type="hidden" value="{{cust_id}}" name="cust_id"> 
+Transaction Amount :
+<input type="text" name="amount">
+<br><br>
+<input type="submit" value="submit">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>
+	<h1> USER LOGIN </h1>
+</title>
+<body>
+	
+
+<form action="{% url 'logincheck' %}" method="POST">
+{%csrf_token%}
+User_Name:<br>
+<input type="text" name="userName" value="">
+<br>
+Password:<br>
+<input type="password" name="password" value="">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
